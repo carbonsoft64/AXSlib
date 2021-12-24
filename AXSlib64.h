@@ -91,7 +91,8 @@ int comparison(int a, int b)
     if(a>b) return 1;
     if(a<b) return 2;
     if(a==b) return 0;
-}
+}
+
 bool parity(int n)
 {
     if(n&1)return false;
@@ -116,7 +117,8 @@ long long deg(long long a, long long n)
         }
     }
     return res;
-}
+}
+
 int digitsNum(int n)
 {
 
@@ -148,7 +150,7 @@ long long fib(long long n)
     long long f1=1, f2=1, fn;
     if(n==1 || n==2) return 1;
     else
-    {for(long long i=0; i<n; i++)
+    {n-=2; for(long long i=0; i<n; i++)
     {
         fn=f1+f2;
         f1=f2;
